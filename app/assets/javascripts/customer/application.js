@@ -15,5 +15,8 @@
 //= require activestorage
 //= require inputmask/dist/inputmask/inputmask.js
 //= require jquery-maskmoney/dist/jquery.maskMoney
+//= require bootstrap-datepicker.min
 //= require select2.min.js
 //= require_tree .
+
+$('.datepicker').datepicker({ autoclose: true, format: 'dd/mm/yyyy' });

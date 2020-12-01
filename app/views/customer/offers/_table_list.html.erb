@@ -1,0 +1,23 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col"><%= Offer.human_attribute_name(:id) %></th>
+      <th scope="col"><%= Offer.human_attribute_name(:advertiser_name) %></th>
+      <th scope="col"><%= Offer.human_attribute_name(:url)%></th>
+      <th scope="col"><%= Offer.human_attribute_name(:status)%></th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% objects.each do |offer| %>
+      <tr>
+        <td><%= offer.id %></td>
+        <td><%= offer.advertiser_name %></td>
+        <td><%= offer.url %></td>
+        <td><%= offer.status %></td>
+        <td><%= link_to 'Editar', edit_customer_offer_path(offer) %> | <%= link_to 'Excluir', customer_offer_path(offer), method: :delete %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

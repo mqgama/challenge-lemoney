@@ -12,6 +12,7 @@ gem 'webpacker'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
+gem 'enumerate_it'
 gem 'simple_form'
 gem 'responders'
 gem 'devise'
