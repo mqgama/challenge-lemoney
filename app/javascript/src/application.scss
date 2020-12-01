@@ -1,0 +1,17 @@
+@import '~admin-lte/dist/css/adminlte.min';
+@import '~admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min';
+@import 'supplier_registration.scss';
+@import 'fixed-table.scss';
+@import 'price_tables.scss';
+
+.content-header { display: flex; align-items: center; justify-content: space-between; }
+form { width: 100%; }
+tr.nested-fields {
+  .form-group { margin-bottom: 0; }
+  .select2-selection { height: 30px; }
+}
+p.green { color: #fff !important; background-color: green !important; }
+.right { text-align: right; }
+p.lower-price { color: #32CD32; }
+
+p.quotation-product-supplier { cursor: pointer; }

@@ -1,0 +1,13 @@
+pt-BR:
+  views:
+    users:
+      mailer:
+        password_change:
+          greeting: 'Olá'
+          message: 'Estamos entrando em contato para notificá-lo que sua senha foi alterada.'
+        reset_password_instructions:
+          greeting: 'Olá'
+          message_1: 'Alguém solicitou um link para alterar sua senha. Você pode fazer isso através do link abaixo.'
+          change_password: 'Alterar minha senha'
+          message_2: 'Se você não solicitou isso, por favor, ignore este e-mail.'
+          message_3: 'Sua senha não será alterada até que vocẽ acesse o link acima e crie uma nova.'

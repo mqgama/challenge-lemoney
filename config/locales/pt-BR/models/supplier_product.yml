@@ -1,0 +1,14 @@
+pt-BR:
+  activerecord:
+    models:
+      supplier_product:
+        one: Produto
+        other: Produtos
+    attributes:
+      supplier_product:
+        name: Nome
+        sku: Código SKU
+        price: Preço
+        product_id: Produto
+        product: Produto
+        quantity: Quantidade em estoque

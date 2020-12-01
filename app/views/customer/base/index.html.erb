@@ -1,0 +1,14 @@
+<div class="content-header">
+  <h3><%= @objects.klass.model_name.human(count: 2)%></h3>
+  <%= render 'new_link' %>
+</div>
+
+<section class="content">
+  <div class="content-fluid">
+    <div class="row">
+      <div class="col-12">
+        <%= render 'table_list', objects: @objects %>
+      </div>
+    </div>
+  </div>
+</section>

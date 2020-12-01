@@ -1,0 +1,5 @@
+import 'admin-lte'
+import 'bootstrap/dist/js/bootstrap.bundle.min'
+import 'popper.js'
+import 'bootstrap'
+import '../src/application.scss'

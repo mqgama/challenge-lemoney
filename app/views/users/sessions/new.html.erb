@@ -1,0 +1,36 @@
+<div class='card-body login-card-body'>
+  <p class="login-box-msg"><%= t('views.users.sessions.new.title') %></p>
+
+  <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <%= f.input :email, label: false, wrapper_html: { class: 'input-group mb-3' } do |i| %>
+      <%= f.email_field :email, class: 'form-control',  placeholder: User.human_attribute_name(:email) %>
+      <div class="input-group-append">
+        <div class="input-group-text">
+          <span class="fas fa-envelope"></span>
+        </div>
+      </div>
+    <% end %>
+
+    <%= f.input :password, label: false, wrapper_html: { class: 'input-group mb-3' } do |i| %>
+      <%= f.password_field :password, class: 'form-control',  placeholder: User.human_attribute_name(:password) %>
+      <div class="input-group-append">
+        <div class="input-group-text">
+          <span class="fas fa-lock"></span>
+        </div>
+      </div>
+    <% end %>
+    <div class="row">
+      <% if devise_mapping.rememberable? %>
+        <div class="col-8">
+          <%= f.input :remember_me, as: :boolean, wrapper_html:{ class: 'icheck-primary' }, input_html: { include_hidden: false } %>
+        </div>
+        <!-- /.col -->
+      <% end %>
+      <div class="col-4">
+        <%= f.submit t('views.users.sessions.new.submit'), class: 'btn btn-primary btn-block' %>
+      </div>
+      <!-- /.col -->
+    </div>
+  <% end %>
+  <%= render "users/shared/links" %>
+</div>

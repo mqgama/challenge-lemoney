@@ -1,0 +1,16 @@
+pt-BR:
+  activerecord:
+    models:
+      user:
+        one: 'Usuário'
+        other: 'Usúarios'
+    attributes:
+      user:
+        name: 'Nome'
+        email: 'E-mail'
+        phone: 'Telefone'
+        password: 'Senha'
+        password_confirmation: 'Confirme sua senha'
+        current_password: 'Senha atual'
+        cnpj: 'CNPJ'
+        remember_me: Lembrar de mim

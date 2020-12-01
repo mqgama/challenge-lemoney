@@ -1,0 +1,14 @@
+pt-BR:
+  views:
+    users:
+      registrations:
+        new:
+          title: 'Seus dados para cadastro'
+          name: 'Nome'
+          email: 'E-mail'
+          phone: 'Telefone'
+          password: 'Senha'
+          password_length: 'caracteres no mínimo'
+          password_confirmation: 'Confirme sua senha'
+          cnpj: 'CNPJ'
+          submit: 'Cadastrar'

@@ -1,0 +1,10 @@
+pt-BR:
+  activerecord:
+    models:
+      shopping_list:
+        one: Lista de compra
+        other: Listas de compra
+    attributes:
+      shopping_list:
+        name: Nome
+        create_at: Criado em

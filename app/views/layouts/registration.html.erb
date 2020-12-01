@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Offers Center</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application' %>
+    <%= javascript_pack_tag 'application' %>
+    <%= stylesheet_pack_tag 'application' %>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  </head>
+
+  <body class="hold-transition login-page">
+
+    <div class="login-box">
+      <div class="login-logo">
+        <%= link_to 'OFFERS CENTER', root_path %>
+      </div>
+
+      <div class="card">
+        <%= render 'shared/notice' if flash[:alert].present? %>
+
+        <%= yield %>
+      </div>
+    </div>
+    <!-- /.login-box -->
+
+    <%= javascript_include_tag 'application' %>
+  </body>
+</html>

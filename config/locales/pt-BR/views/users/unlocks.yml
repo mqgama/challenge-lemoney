@@ -1,0 +1,8 @@
+pt-BR:
+  views:
+    users:
+      unlocks:
+        new:
+          title: 'Reenviar as instruções de desbloqueio'
+          email: 'E-mail'
+          submit: 'Reenviar'

@@ -1,0 +1,5 @@
+pt-BR:
+  devise:
+    sessions:
+      new:
+        title_html: Faça seu login como <b>%{resource_name}</b>

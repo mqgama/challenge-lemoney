@@ -1,0 +1,7 @@
+pt-BR:
+  activerecord:
+    attributes:
+      cart_product:
+        customer_product_id: Produto
+        customer_product: Produto
+        quantity: Quantidade (KG)

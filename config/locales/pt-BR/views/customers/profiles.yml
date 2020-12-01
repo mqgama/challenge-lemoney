@@ -1,0 +1,7 @@
+pt-BR:
+  views:
+    customers:
+      profiles:
+        edit:
+          user_profile: 'Meu Perfil'
+          change_password: 'Alterar senha'

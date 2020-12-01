@@ -1,0 +1,39 @@
+<div class="content-header">
+  <div class="container-fluid">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1>
+          <%= @object.model_name.human(count: 2)%>
+          <small><%= link_to t('core.links.back'), [:customer, @object.class], class: 'btn btn-default btn-sm' %></small>
+        </h1>
+      </div><!-- /.col -->
+
+      <div class="col-sm-6">
+        <ol class="breadcrumb float-sm-right">
+          <li class="breadcrumb-item">
+            <%= link_to office_root_path do %>
+              <i class="fa fa-dashboard"></i> Dashboard
+            <% end %>
+          </li>
+
+          <li class="breadcrumb-item">
+            <%= link_to [:customer, @object.class] do %>
+              <i class='fas fa-shopping-cart'></i><%= @object.model_name.human count: 2 %>
+            <% end %>
+          </li>
+
+          <li class="breadcrumb-item active"><%= t('core.links.edit') %></li>
+        </ol>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+  </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+
+<section class="content">
+  <div class="row">
+    <div class="col-12">
+      <%= render 'edit' %>
+    </div>
+  </div>
+</section>

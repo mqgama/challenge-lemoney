@@ -1,0 +1,47 @@
+.table-scroll {
+  position: relative;
+  width:100%;
+  z-index: 1;
+  margin: auto;
+  overflow: auto;
+  height: 500px;
+
+  table {
+    width: 100%;
+    // min-width: 1024px;
+    margin: auto;
+  }
+
+  th, td {
+    width: 10%;
+    padding: 5px 10px;
+    background: #fff;
+    vertical-align: top !important;
+  }
+
+  th {
+    // background-color: #4b545c;
+    color: #000;
+  }
+
+  thead tr:first-child th {
+    color: #000;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  thead tr:first-child th:first-child {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    z-index: 11;
+  }
+  tbody th:first-child {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    z-index: 2;
+  }
+}

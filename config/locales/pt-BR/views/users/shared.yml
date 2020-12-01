@@ -1,0 +1,10 @@
+pt-BR:
+  views:
+    users:
+      shared:
+        links:
+          login: 'Entrar'
+          sign_up: 'Cadastrar'
+          forgot_password: 'Esqueceu sua senha?'
+          instructions_confirmation: 'Não recebeu instruções de confirmação?'
+          instructions_unlock: 'Não recebeu instruções de desbloqueio?'

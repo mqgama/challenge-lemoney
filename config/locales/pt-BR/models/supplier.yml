@@ -1,0 +1,12 @@
+pt-BR:
+  activerecord:
+    models:
+      supplier:
+        one: Fornecedor
+        other: Fornecedores
+    attributes:
+      supplier:
+        name: Nome
+        cnpj: CNPJ
+        parser: Modelo de tabela
+        brasbol: Brasbol

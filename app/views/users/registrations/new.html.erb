@@ -1,0 +1,33 @@
+<div class="register-box-body">
+  <p class="login-box-msg"><%= t('views.users.registrations.new.title') %></p>
+
+  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= f.error_notification %>
+      
+    <div class="form-group has-feedback">
+      <%= f.input :email, label: false, required: true, autofocus: true,
+                  input_html: { class: 'form-control', placeholder: User.human_attribute_name(:email), autocomplete: "email" } %>
+      <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+    </div>
+    <div class="form-group has-feedback">
+      <%= f.input :password, label: false, required: true,
+                  input_html: { class: 'form-control', placeholder: User.human_attribute_name(:password) } %>
+      <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+    </div>
+    <div class="form-group has-feedback">
+      <%= f.input :password_confirmation, label: false, required: true,
+                  input_html: { class: 'form-control', placeholder: User.human_attribute_name(:password_confirmation) } %>
+      <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+    </div>
+    <div class="row">
+      <div class="col-xs-8">
+      </div>
+      <div class="col-xs-4">
+        <%= f.submit t('views.users.registrations.new.submit'), class: 'btn btn-primary' %>
+      </div>
+      <!-- /.col -->
+    </div>
+  <% end %>
+
+  <%= render "users/shared/links" %>
+</div>
