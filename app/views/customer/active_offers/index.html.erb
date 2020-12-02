@@ -1,0 +1,13 @@
+<section class="content">
+  <% @objects.each do |offer| %>
+    <div class="info-box">
+      <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
+
+      <div class="info-box-content">
+        <span class="info-box-text"><%= offer.advertiser_name %></span>
+        <a href="<%= offer.url %>" target="_blank">Shop Now</a>
+      </div>
+      <!-- /.info-box-content -->
+    </div>
+  <% end %>
+</section>

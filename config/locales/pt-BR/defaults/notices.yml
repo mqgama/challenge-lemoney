@@ -1,0 +1,11 @@
+---
+pt-BR:
+  notices:
+    created: "%{model} adicionado(a) com sucesso."
+    updated: "%{model} atualizado(a) com sucesso."
+    destroyed: "%{model} removido(a) com sucesso."
+    offer:
+      status:
+        "disabled": 'A oferta foi desativada.'
+        "enable": 'A oferta foi ativada.'
+        error: "Não foi possível alterar o status da oferta."

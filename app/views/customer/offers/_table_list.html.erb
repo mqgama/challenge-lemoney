@@ -5,7 +5,7 @@
       <th scope="col"><%= Offer.human_attribute_name(:advertiser_name) %></th>
       <th scope="col"><%= Offer.human_attribute_name(:url)%></th>
       <th scope="col"><%= Offer.human_attribute_name(:status)%></th>
-      <th scope="col">Actions</th>
+      <th scope="col"><%= t('core.views.actions') %></th>
     </tr>
   </thead>
 
@@ -16,7 +16,11 @@
         <td><%= offer.advertiser_name %></td>
         <td><%= offer.url %></td>
         <td><%= offer.status %></td>
-        <td><%= link_to 'Editar', edit_customer_offer_path(offer) %> | <%= link_to 'Excluir', customer_offer_path(offer), method: :delete %></td>
+        <td><%= link_to t('core.links.edit'), edit_customer_offer_path(offer) %> | 
+        <%= link_to_if check_status(offer), 'Desativar', customer_disable_offers_path(offer_id: offer.id,
+          offer: { status: 'disabled' }), method: :post %> | 
+        <%= link_to t('core.links.destroy'), customer_offer_path(offer), method: :delete,
+          data: { confirm: t('core.buttons.destroy.confirm') } %></td>
       </tr>
     <% end %>
   </tbody>

@@ -51,4 +51,8 @@ class Customer::BaseController < ApplicationController
   def described_class
     controller_name.singularize.camelize.constantize
   end
+  
+  def permitted_params
+    raise 'This method should be implemented'
+  end
 end

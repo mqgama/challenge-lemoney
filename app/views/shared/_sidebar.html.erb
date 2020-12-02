@@ -1,15 +1,21 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
   <%= link_to root_path, class: 'brand-link' do %>
-    <span class="brand-text font-weight-light">OFFERS CENTER</span>
+    <span class="brand-text font-weight-light"><%= t('core.views.offers_center') %>
+    </span>
   <% end %>
   <!-- sidebar: style can be found in sidebar.less -->
   <section class="sidebar">
     <!-- Sidebar user panel -->
     <nav class='mt-2'>
       <!-- sidebar menu: : style can be found in sidebar.less -->
-      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-        <%= custom_menu_item link: root_path, icon: 'fas fa-tachometer-alt', text: 'Dashboard' %>
-        <%= custom_menu_item link: customer_offers_path, icon: 'fas fa-shopping-cart', text: Offer.model_name.human(count: 2) %>
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview"
+        role="menu" data-accordion="false">
+        <%= custom_menu_item link: root_path, icon: 'fas fa-tachometer-alt',
+          text: 'Dashboard' %>
+        <%= custom_menu_item link: customer_offers_path, icon: 'fas fa-shopping-cart',
+          text: Offer.model_name.human(count: 2) %>
+        <%= custom_menu_item link: customer_active_offers_path, icon: 'fas fa-shopping-cart',
+          text: t('core.views.active_offers') %>
         <%= custom_menu_item link: destroy_user_session_path, method: :delete,
           icon: 'fas fa-sign-out-alt', text: t('core.links.sign_out') %>
       </ul>

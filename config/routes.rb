@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   namespace :customer do
     resources :offers
+    resources :active_offers, only: :index
+    resources :disable_offers
   end
-
 end

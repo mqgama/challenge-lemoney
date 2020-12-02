@@ -1,0 +1,9 @@
+pt-BR:
+  customer:
+    offers:
+      index:
+        subtitle: ''
+        edit:
+          subtitle: Alterar
+        new:
+          subtitle: Adicionar

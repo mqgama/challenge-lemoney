@@ -1,0 +1,14 @@
+pt-BR:
+  activerecord:
+    models:
+      offer:
+        one: Oferta
+        other: Ofertas
+    attributes:
+      offer:
+        advertiser_name: Anunciante
+        url: URL
+        description: Descrição
+        status: Status
+        start_at: Início
+        end_at: Fim

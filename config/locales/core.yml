@@ -11,17 +11,16 @@ pt-BR:
       back: 'Voltar'
       add: 'Adicionar'
       remove: 'Excluir'
-      export_pdf: 'Exportar PDF'
-      export_excel: 'Exportar Excel'
-      export: 'Exportar'
-      quotation:
-        index: 'Cotações'
-        create: 'Cotar'
-        show: 'Visualizar Cotação'
     views:
       actions: 'Ações'
       new: 'Cadastro de %{resource_name}'
       edit: 'Atualização de %{resource_name}'
+      active_offers: 'Ofertas Ativas'
+      offers_center: CENTRAL DE OFERTAS
     select:
       option:
         default: 'Selecione uma opção'
+    buttons:
+      destroy:
+        alt: 'Excluir'
+        confirm: 'Você tem certeza?'
